@@ -22,8 +22,8 @@ public class Main {
 
                     }
                 }
-                System.out.println("Минимальная сумма трат за неделю составила " + maxSalary +
-                        " рублей. Максимальная сумма трат за неделю составила " + minSalary
+                System.out.println("Минимальная сумма трат за неделю составила " + minSalary +
+                        " рублей. Максимальная сумма трат за неделю составила " + maxSalary
                         + " рублей");
             }
 
@@ -36,7 +36,8 @@ public class Main {
         for (final double current3 : salaryMonth3) {
             totalSalary3 = totalSalary3 + current3;
         }
-        System.out.println("Средняя сумма трат за месяц составила " + totalSalary3 / 3 + " рублей");
+        System.out.println("Средняя сумма трат за месяц составила "
+                + totalSalary3 / salaryMonth3.length + " рублей");
         System.out.println();
 
         System.out.println("Задание 4");
