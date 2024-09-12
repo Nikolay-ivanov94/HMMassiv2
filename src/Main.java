@@ -12,16 +12,13 @@ public class Main {
         System.out.println("Задание 2");
         int[] salaryMonth2 = {35157, 4312, 7532, 1600, 30123};
         int maxSalary = -1;
+        int minSalary = 999999999;
         for (final int current : salaryMonth2) {
             if (current > maxSalary) {
                 maxSalary = current;
-                int minSalary = current;
-                for (final int currentMin : salaryMonth2) {
-                    if (currentMin < minSalary) {
-                        minSalary = currentMin;
-
+            if (current < minSalary) {
+                minSalary = current;
                     }
-                }
                 System.out.println("Минимальная сумма трат за неделю составила " + minSalary +
                         " рублей. Максимальная сумма трат за неделю составила " + maxSalary
                         + " рублей");
@@ -31,13 +28,13 @@ public class Main {
         System.out.println();
         System.out.println("Задание 3");
 
-        double[] salaryMonth3 = {8757, 2372, 19832, 1321, 39123};
-        double totalSalary3 = 0;
-        for (final double current3 : salaryMonth3) {
-            totalSalary3 = totalSalary3 + current3;
+        int[] salarySumMonth = {8757, 2372, 19832, 1321, 39123};
+        int totalSalary3 = 0;
+        for (int i = 0; i < salary.length; i++) {
+            totalSalary3 = totalSalary3 + salarySumMonth[i];
         }
         System.out.println("Средняя сумма трат за месяц составила "
-                + totalSalary3 / salaryMonth3.length + " рублей");
+                + totalSalary3 / salarySumMonth.length + " рублей");
         System.out.println();
 
         System.out.println("Задание 4");
